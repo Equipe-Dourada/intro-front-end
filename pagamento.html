@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1 class="mt-5">Pagamento</h1>
+        </header>
+        <section>
+            <form>
+                <div class="form-group">
+                    <label for="bandeira">Bandeira do Cartão</label>
+                    <select class="form-control" id="bandeira">
+                        <option>Visa</option>
+                        <option>Mastercard</option>
+                        <option>American Express</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="numero-cartao">Número do Cartão</label>
+                    <input type="text" class="form-control" id="numero-cartao" placeholder="Digite o número do cartão">
+                </div>
+                <div class="form-group">
+                    <label for="data-expiracao">Data de Expiração</label>
+                    <input type="month" class="form-control" id="data-expiracao">
+                </div>
+                <div class="form-group">
+                    <label for="codigo-seguranca">Código de Segurança</label>
+                    <input type="text" class="form-control" id="codigo-seguranca" placeholder="CVV">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='resumo.html'">Finalizar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
