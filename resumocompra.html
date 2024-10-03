@@ -1,23 +1,69 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resumo da Compra</title>
-
+    <title>Confirmação de Compra</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <main class="container">
-        <header>
-            <h1 class="mt-5">Compra Finalizada</h1>
-        </header>
-        <section>
-            <p>Produtos Selecionados: Produto 1, Produto 2, ...</p>
-            <p>Quantidade: 2</p>
-            <p>Forma de Pagamento: Cartão de Crédito - Visa</p>
-            <p>Valor Total: R$ 300,00</p>
-            <p><strong>Compra realizada com sucesso!</strong></p>
-        </section>
-    </main>
+<main class="container">
+    <header>
+        <h1 class="mt-5 text-center">Confirmação da Compra</h1>
+    </header>
+    <section class="mt-4">
+        <h2>Detalhes da Compra</h2>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço Unitário</th>
+                <th>Subtotal</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>The Last of Us Part II</td>
+                <td>1</td>
+                <td>R$ 179,00</td>
+                <td>R$ 179,00</td>
+            </tr>
+            <tr>
+                <td>Marvel's Spider-Man</td>
+                <td>1</td>
+                <td>R$ 299,00</td>
+                <td>R$ 299,00</td>
+            </tr>
+            <tr>
+                <td>FC25</td>
+                <td>2</td>
+                <td>R$ 159,00</td>
+                <td>R$ 318,00</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th colspan="3" class="text-right">Total:</th>
+                <th>R$ 796,00</th>
+            </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section class="mt-4">
+        <h2>Forma de Pagamento</h2>
+        <p>Cartão de Crédito (**** **** **** 1234)</p>
+    </section>
+    <section class="mt-4">
+        <h2>Status da Compra</h2>
+        <div class="alert alert-success" role="alert">
+            Compra realizada com sucesso! Obrigado pela sua preferência.
+        </div>
+    </section>
+    <footer class="mt-5 text-center">
+        <button type="button" class="btn btn-primary" onclick="window.location.href='inicial.html'">Voltar à Página Inicial</button>
+    </footer>
+</main>
 </body>
 </html>
