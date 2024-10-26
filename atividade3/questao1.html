@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style1.css">
+  <script src="script1.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <h1>Calculadora</h1>
+  <form id="calculatorForm">
+    <div class="form-group">
+      <label for="number1">Número 1:</label>
+      <input type="text" id="number1" required>
+    </div>
+    <div class="form-group">
+      <label for="number2">Número 2:</label>
+      <input type="text" id="number2" required>
+    </div>
+    <div class="form-group">
+      <label for="operator">Operador:</label>
+      <select id="operator" required>
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+    </div>
+    <button type="button" id="calculateBtn">Calcular</button>
+    <div class="form-group">
+      <label for="result">Resultado:</label>
+      <input type="text" id="result" readonly>
+    </div>
+  </form>
+</div>
+</body>
+</html>

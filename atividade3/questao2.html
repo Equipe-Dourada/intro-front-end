@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de IMC</title>
+  <link rel="stylesheet" href="style2.css">
+  <script src="script2.js" defer></script>
+</head>
+<body>
+<div class="container">
+  <h1>Calculadora de IMC</h1>
+  <form id="imcForm">
+    <label for="height">Altura (em metros):</label>
+    <input type="text" id="height" placeholder="Ex: 1.75" required>
+    <label for="weight">Peso (em kg):</label>
+    <input type="text" id="weight" placeholder="Ex: 70" required>
+    <div class="button-container">
+      <button type="button" id="calculateBtn">Calcular</button>
+      <button type="button" id="clearBtn">Limpar</button>
+    </div>
+  </form>
+  <div id="result" class="hidden">
+    <h2>Resultado do IMC</h2>
+    <p>Valor do IMC: <span id="imcValue"></span></p>
+    <p>Situação: <span id="situation"></span></p>
+    <p>Grau de Obesidade: <span id="obesityLevel"></span></p>
+  </div>
+</div>
+<div class="container">
+  <h1>Tabela de Classificação do IMC</h1>
+  <table id="imcTable">
+    <thead>
+    <tr>
+      <th>Intervalo de IMC</th>
+      <th>Situação</th>
+      <th>Grau de Obesidade</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>&lt; 16</td>
+      <td>Magreza Grave</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>16 - 16.9</td>
+      <td>Magreza Moderada</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>17 - 18.4</td>
+      <td>Magreza Leve</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <td>18.5 - 24.9</td>
+      <td>Peso Normal</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>25 - 29.9</td>
+      <td>Sobrepeso</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <td>30 - 34.9</td>
+      <td>Obesidade Grau I</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <td>35 - 39.9</td>
+      <td>Obesidade Grau II</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>&ge; 40</td>
+      <td>Obesidade Grau III</td>
+      <td>III</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
